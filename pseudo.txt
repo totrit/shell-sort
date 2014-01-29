@@ -1,0 +1,18 @@
+Input: An array of integers, length of n, and we define the index of
+the elements as 0 ~ n-1
+Output: That certain array will be sorted with SHELL-SORT
+
+function shell_sort
+    span <- n / 2
+    while span > 0 do
+          for collection_num from 0 .. span - 1 do
+                for collection_cursor from collection_num .. n - 1 collection_cursor += span
+                do
+                    put collection_cursor in the right place of
+    sub-array collection_num .. collection_cursor, with 'span' span,
+    can use bubble sort or insert sort.
+                end of for
+          end of for
+    span /= 2
+    end of while
+end of function
